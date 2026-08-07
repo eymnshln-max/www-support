@@ -25,6 +25,23 @@ and is not linked to any identity.
 
 Please do not paste confidential or personal information into a case.
 
+## Anonymous usage analytics
+
+To understand how the app is used and where it falls short, we record a
+small set of anonymous events — for example that a case was started, that
+a diagnosis finished, or that the subscription screen was shown.
+
+These events are processed by PostHog, an analytics provider acting on our
+behalf, on servers in the European Union.
+
+What is never included: the content of your cases, the instructions you
+gave an AI, the results you paste, screenshots, repaired instructions, and
+anything from the memory stored on your device.
+
+Events are tied to a random identifier generated on your device. It is not
+your Apple ID, not an advertising identifier, and is not linked to your
+name or any account. Deleting the app removes it.
+
 ## What stays on your device
 
 Your case history and everything the app learns about how you work — the
@@ -41,7 +58,7 @@ details.
 ## What we do not do
 
 - No advertising
-- No third-party trackers
+- No cross-app or cross-site tracking
 - We do not sell or share your data
 
 ## Children
