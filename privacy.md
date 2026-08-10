@@ -20,9 +20,8 @@ not create an account profile.
 
 ## What is sent when you use the AI feature
 
-Before the first AI request, the app explains this sharing and asks for your
-permission. If you agree and submit a case, WWW sends the following through
-our secure server relay to OpenAI:
+When you submit a case for diagnosis, WWW sends the following through our
+secure server relay to OpenAI:
 
 - the goal and instructions you enter;
 - the AI result and your description of what went wrong;
@@ -34,7 +33,8 @@ This information is used only to provide the diagnosis, comparison, or
 case-related answer you requested. Your local display name is not sent.
 
 Please do not include confidential information or personal information that
-is not needed for the diagnosis.
+is not needed for the diagnosis. Do not submit a case if you do not want its
+contents processed by OpenAI.
 
 ## Service providers and retention
 
@@ -64,22 +64,17 @@ screen views, case events, or case content to an analytics provider.
 
 Your display name, case history, drafts, and WWW memory are stored on your
 device. They are not synchronized to an account. Relevant memory excerpts are
-sent to OpenAI only when you make an AI request after giving permission, as
-described above.
+sent to OpenAI only when you submit an AI request, as described above.
 
 You can review and remove individual memory items in the app. “Reset app data”
-removes local app content and your AI-sharing permission. Deleting the app
-removes its local data.
+removes local app content. Deleting the app removes its local data.
 
 ## Your choices
 
-You can decline AI data sharing. The AI diagnosis cannot be produced without
-sending the case to OpenAI, but the rest of the app does not send a case when
-permission is declined.
-
-You can review or withdraw permission at any time under **Profile → AI data
-sharing**. Withdrawing permission stops future AI requests until you agree
-again. It does not recall data already processed for a request.
+The AI diagnosis cannot be produced without sending the submitted case to
+OpenAI. You can avoid this processing by not submitting a case. Resetting or
+deleting local data does not recall information already processed for a
+request.
 
 For privacy or deletion questions, contact us at the address below.
 
