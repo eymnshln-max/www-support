@@ -24,12 +24,12 @@ Open the paywall inside the app and tap Restore.
 
 **How do I delete my data?**
 Use Reset app data in the profile screen, remove individual items from the
-memory screen, or delete the app. You can also review or withdraw future AI
-data sharing under Profile → AI data sharing.
+memory screen, or delete the app.
 
 **What is sent to OpenAI?**
-Before the first AI request, WWW asks for permission and explains what is sent.
-See the [Privacy Policy](privacy) for the full list and retention details.
+Submitting a case sends the case content and relevant saved work preferences
+to OpenAI through WWW’s secure server relay. See the [Privacy Policy](privacy)
+for the full list and retention details.
 
 **Terms of Use**
 WWW uses the [Apple Standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/).
