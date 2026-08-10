@@ -5,61 +5,95 @@ title: Privacy Policy
 
 # Privacy Policy
 
-Last updated: August 7, 2026
+Last updated: August 10, 2026
 
-**What Went Wrong?** is an independent product and is not affiliated with
-or endorsed by the AI providers referenced in it.
+**What Went Wrong?** (“WWW”) is an independent product and is not affiliated
+with or endorsed by the AI providers referenced in it.
 
-## No account, no sign-in
+## No account or sign-in
 
-The app does not require an account. We do not ask for your name, email
-address or phone number, and we do not create a user profile.
+The app does not require an account. During onboarding, you may enter a first
+name, nickname, or username so the app can address you. That name is stored on
+your device only. It is not included in requests to OpenAI, analytics, or
+payment systems. We do not ask for your email address or phone number and do
+not create an account profile.
 
-## What leaves your device
+## What is sent when you use the AI feature
 
-When you submit a case, the content you provide — your goal, the
-instruction you gave an AI, the result you received, your description of
-what went wrong, and any screenshot you attach — is sent to OpenAI's API
-so the diagnosis can be produced. It is transmitted for that purpose only
-and is not linked to any identity.
+Before the first AI request, the app explains this sharing and asks for your
+permission. If you agree and submit a case, WWW sends the following through
+our secure server relay to OpenAI:
 
-Please do not paste confidential or personal information into a case.
+- the goal and instructions you enter;
+- the AI result and your description of what went wrong;
+- any screenshot you choose to attach;
+- relevant work preferences and observations saved in WWW memory; and
+- later retry results or chat messages you choose to send about that case.
 
-## Anonymous usage analytics
+This information is used only to provide the diagnosis, comparison, or
+case-related answer you requested. Your local display name is not sent.
 
-To understand how the app is used and where it falls short, we record a
-small set of anonymous events — for example that a case was started, that
-a diagnosis finished, or that the subscription screen was shown.
+Please do not include confidential information or personal information that
+is not needed for the diagnosis.
 
-These events are processed by PostHog, an analytics provider acting on our
-behalf, on servers in the European Union.
+## Service providers and retention
 
-What is never included: the content of your cases, the instructions you
-gave an AI, the results you paste, screenshots, repaired instructions, and
-anything from the memory stored on your device.
+Our server relay is hosted by Netlify. It processes requests and standard
+network metadata needed to deliver and protect the service. We do not use the
+relay to create a database of case content.
 
-Events are tied to a random identifier generated on your device. It is not
-your Apple ID, not an advertising identifier, and is not linked to your
-name or any account. Deleting the app removes it.
+OpenAI processes the content to generate the requested response. API response
+storage is disabled in our request. OpenAI states that API data is not used to
+train its models by default, although abuse-monitoring logs may be retained for
+up to 30 days under its [API data controls](https://platform.openai.com/docs/guides/your-data).
+
+The app sends a one-way hash derived from a random installation identifier for
+abuse prevention. It is not your Apple ID, advertising identifier, name, or
+account ID. Deleting the app removes the identifier from your device.
+
+Our service providers are required to handle data consistently with their
+applicable terms, privacy commitments, and protections at least equal to those
+described here.
+
+## Analytics
+
+Analytics is disabled in the current release. WWW does not send app taps,
+screen views, case events, or case content to an analytics provider.
 
 ## What stays on your device
 
-Your case history and everything the app learns about how you work — the
-observation ledger and any preferences you confirm — are stored only on
-your device. They are never uploaded to us or to anyone else. Deleting the
-app deletes them permanently. You can also review and remove individual
-items from the memory screen inside the app.
+Your display name, case history, drafts, and WWW memory are stored on your
+device. They are not synchronized to an account. Relevant memory excerpts are
+sent to OpenAI only when you make an AI request after giving permission, as
+described above.
+
+You can review and remove individual memory items in the app. “Reset app data”
+removes local app content and your AI-sharing permission. Deleting the app
+removes its local data.
+
+## Your choices
+
+You can decline AI data sharing. The AI diagnosis cannot be produced without
+sending the case to OpenAI, but the rest of the app does not send a case when
+permission is declined.
+
+You can review or withdraw permission at any time under **Profile → AI data
+sharing**. Withdrawing permission stops future AI requests until you agree
+again. It does not recall data already processed for a request.
+
+For privacy or deletion questions, contact us at the address below.
 
 ## Payments
 
-Subscriptions are processed by Apple. We never see or store your payment
-details.
+Subscriptions are processed by Apple. We do not receive or store your payment
+card details. Apple provides the app with the subscription status needed to
+unlock paid features.
 
 ## What we do not do
 
 - No advertising
 - No cross-app or cross-site tracking
-- We do not sell or share your data
+- No sale of personal data
 
 ## Children
 
@@ -67,8 +101,8 @@ The app is not intended for children under 13.
 
 ## Changes
 
-If this policy changes, the updated version will be posted on this page
-with a new date.
+If this policy changes, the updated version will be posted on this page with a
+new date.
 
 ## Contact
 
