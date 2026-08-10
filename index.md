@@ -20,14 +20,19 @@ Subscriptions are managed by Apple. Open the Settings app, tap your name,
 then Subscriptions, and select What Went Wrong?
 
 **How do I restore a purchase?**
-Open the paywall inside the app and tap Restore Purchases.
+Open the paywall inside the app and tap Restore.
 
 **How do I delete my data?**
-Everything the app remembers is stored on your device. Delete the app to
-remove it, or remove individual items from the memory screen.
+Use Reset app data in the profile screen, remove individual items from the
+memory screen, or delete the app. You can also review or withdraw future AI
+data sharing under Profile → AI data sharing.
 
-**Is my case content private?**
-See the [Privacy Policy](privacy).
+**What is sent to OpenAI?**
+Before the first AI request, WWW asks for permission and explains what is sent.
+See the [Privacy Policy](privacy) for the full list and retention details.
+
+**Terms of Use**
+WWW uses the [Apple Standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/).
 
 ---
 
