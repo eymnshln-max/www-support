@@ -38,18 +38,13 @@ contents processed by OpenAI.
 
 ## What we keep on our own servers
 
-Alongside producing the diagnosis, we keep the case so that the diagnosis gets
-better over time: the goal and instructions you entered, the AI result you
-pasted, the model and version you named, the diagnosis produced, any correction
-you make to what you meant, and how you rate each fix. Your chat messages on
-the case screen are not kept. A screenshot is not kept either — only the fact
-that a case had one.
+We keep the case so the diagnosis gets better over time: what you entered, the
+AI result you pasted, the diagnosis produced, and how you rate each fix. Chat
+messages and screenshots are not kept.
 
-This is held in a private database, hosted by Supabase, that nothing in the app
-can read back. It is keyed by the one-way installation hash described below,
-not by an account, a name, or an email address, and it is kept until you delete
-it. Because you write these fields yourself, please keep confidential
-information out of them.
+It is held in a private database hosted by Supabase, keyed by the one-way
+installation hash described below rather than by any account or name, and kept
+until you delete it.
 
 ## Service providers and retention
 
@@ -82,10 +77,9 @@ advertising identifier.
 ## What stays on your device
 
 Your display name, case history, drafts, and WWW memory are stored on your
-device, and the device is where the app reads them from. They are not
-synchronized to an account; the server copy described above is separate and is
-never sent back to the app. Relevant memory excerpts are sent to OpenAI only
-when you submit an AI request, as described above.
+device and read from there. They are not synchronized to an account, and the
+server copy described above is never sent back to the app. Relevant memory
+excerpts are sent to OpenAI only when you submit an AI request.
 
 You can review and remove individual memory items in the app.
 
@@ -95,11 +89,9 @@ You can review and remove individual memory items in the app.
 - **Reset app data** removes everything from that installation from our
   servers, along with your cases, memory, and onboarding answers on the device.
 
-Both work offline: the request is saved and sent the next time the app can
-reach us. Deleting the app stops any further collection, but it also removes
-the identifier needed to reach what was already stored — so delete your cases,
-or use Reset app data, before deleting the app if you want the stored copy
-gone.
+Both work offline; the request is sent the next time the app can reach us.
+Deleting the app also removes the identifier those requests need, so delete
+your cases or reset first if you want the stored copy gone.
 
 ## Your choices
 
