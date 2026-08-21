@@ -5,7 +5,7 @@ title: Privacy Policy
 
 # Privacy Policy
 
-Last updated: August 10, 2026
+Last updated: August 21, 2026
 
 **What Went Wrong?** (“WWW”) is an independent product and is not affiliated
 with or endorsed by the AI providers referenced in it.
@@ -36,11 +36,26 @@ Please do not include confidential information or personal information that
 is not needed for the diagnosis. Do not submit a case if you do not want its
 contents processed by OpenAI.
 
+## What we keep on our own servers
+
+Alongside producing the diagnosis, we keep the case so that the diagnosis gets
+better over time: the goal and instructions you entered, the AI result you
+pasted, the model and version you named, the diagnosis produced, any correction
+you make to what you meant, and how you rate each fix. Your chat messages on
+the case screen are not kept. A screenshot is not kept either — only the fact
+that a case had one.
+
+This is held in a private database, hosted by Supabase, that nothing in the app
+can read back. It is keyed by the one-way installation hash described below,
+not by an account, a name, or an email address, and it is kept until you delete
+it. Because you write these fields yourself, please keep confidential
+information out of them.
+
 ## Service providers and retention
 
 Our server relay is hosted by Netlify. It processes requests and standard
-network metadata needed to deliver and protect the service. We do not use the
-relay to create a database of case content.
+network metadata needed to deliver and protect the service. Supabase hosts the
+database described above.
 
 OpenAI processes the content to generate the requested response. API response
 storage is disabled in our request. OpenAI states that API data is not used to
@@ -57,24 +72,40 @@ described here.
 
 ## Analytics
 
-Analytics is disabled in the current release. WWW does not send app taps,
-screen views, case events, or case content to an analytics provider.
+WWW sends a small set of product events to PostHog: which steps you reach, how
+many cases you run, which verdict came back, whether a fix helped, and whether
+a purchase completed. These are counts and fixed choices. No text you typed, no
+case content, and no screenshot reaches the analytics provider. Events carry a
+random identifier created on your device — not your Apple ID, your name, or an
+advertising identifier.
 
 ## What stays on your device
 
 Your display name, case history, drafts, and WWW memory are stored on your
-device. They are not synchronized to an account. Relevant memory excerpts are
-sent to OpenAI only when you submit an AI request, as described above.
+device, and the device is where the app reads them from. They are not
+synchronized to an account; the server copy described above is separate and is
+never sent back to the app. Relevant memory excerpts are sent to OpenAI only
+when you submit an AI request, as described above.
 
-You can review and remove individual memory items in the app. “Reset app data”
-removes local app content. Deleting the app removes its local data.
+You can review and remove individual memory items in the app.
+
+## Deleting your data
+
+- **Delete a case** removes it from your device and from our servers.
+- **Reset app data** removes everything from that installation from our
+  servers, along with your cases, memory, and onboarding answers on the device.
+
+Both work offline: the request is saved and sent the next time the app can
+reach us. Deleting the app stops any further collection, but it also removes
+the identifier needed to reach what was already stored — so delete your cases,
+or use Reset app data, before deleting the app if you want the stored copy
+gone.
 
 ## Your choices
 
 The AI diagnosis cannot be produced without sending the submitted case to
-OpenAI. You can avoid this processing by not submitting a case. Resetting or
-deleting local data does not recall information already processed for a
-request.
+OpenAI. You can avoid this processing by not submitting a case. Deleting your
+data does not recall content already processed by OpenAI for a request.
 
 For privacy or deletion questions, contact us at the address below.
 
